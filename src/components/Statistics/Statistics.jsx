@@ -1,4 +1,4 @@
-﻿import {StatsCard, Title, StatList, StatLabel, StatItem, StatPercentage } from './Statistics.styled';
+import {StatsCard, Title, StatList, StatLabel, StatItem, StatPercentage } from './Statistics.styled';
 
 
 export const Statistics = ({title, stats}) => {

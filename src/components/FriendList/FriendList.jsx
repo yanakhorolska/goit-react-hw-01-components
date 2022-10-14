@@ -1,1 +1,1 @@
-﻿import { } from './FriendList.styled';
+import { } from './FriendList.styled';

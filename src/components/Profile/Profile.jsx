@@ -1,4 +1,4 @@
-﻿import {UserStats, UserStatsItem, UserStatsLabel, UserStatsQuantity, UserCard, UserDescription, UserImage, UserName, UserTag, UserLocation } from './Profile.styled';
+import {UserStats, UserStatsItem, UserStatsLabel, UserStatsQuantity, UserCard, UserDescription, UserImage, UserName, UserTag, UserLocation } from './Profile.styled';
 
 export const Profile = ({avatar, username, tag, location, stats}) => {
     return (
