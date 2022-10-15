@@ -1,47 +1,46 @@
 import styled from "styled-components";
 
 export const StatsCard = styled.section`
-    width: 450px;
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 2px 2px 15px 8px #AFEEEE;
-    background-color: #ffffff;
+    width: ${p => p.theme.sizes.width.app};
+    margin: ${p => p.theme.space.m.mAuto};
+    border-radius: ${p => p.theme.radii.borderRadius.s};
+    box-shadow: ${p => p.theme.shadows.one};
+    background-color: ${p => p.theme.colors.bgEl};
+    margin-top: ${p => p.theme.space.mt};
 `;
 
 export const Title = styled.h2`
-color: grey;
-    font-size: 30px;
-    text-align: center;
-    padding: 25px;
-    margin: 0;
+    color: ${p => p.theme.colors.statsHead};
+    font-size: ${p => p.theme.fontSizes.xl};
+    text-align: ${p => p.theme.textAlign};
+    padding: ${p => p.theme.space.p.l};
+    margin: ${p => p.theme.space.m.m};
     
 `;
 
 export const StatLabel = styled.span`
-    font-size: 17px;
+    font-size: ${p => p.theme.fontSizes.m};
 `;
 
 export const StatPercentage = styled.span`
-    font-size: 20px;
-    font-weight: 700;
+    font-size: ${p => p.theme.fontSizes.m};
+    font-weight: ${p => p.theme.fontWeights.fontWeight.bold};
 `;
 
 export const StatList = styled.ul`
-padding: 0;
-margin: 0;
-background-color: #fff000;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+    padding: ${p => p.theme.space.p.zero};
+    margin: ${p => p.theme.space.m.m};
+    display: ${p => p.theme.display.flex};
+    justify-content: ${p => p.theme.justifyContent.sb};
 `;
 export const StatItem = styled.li`
-background-color: ${getRandomColor};
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 12px;
-gap: 6px;
-width: 100%;
+    background-color: ${getRandomColor};
+    display: ${p => p.theme.display.flex};
+    flex-direction: ${p => p.theme.flexDirection.col};
+    align-items: ${p => p.theme.alignItems.center};
+    padding: ${p => p.theme.space.p.s};
+    gap: ${p => p.theme.space.gridGap.s};
+    width: ${p => p.theme.sizes.width.max};
 `;
 
 function getRandomColor()  {

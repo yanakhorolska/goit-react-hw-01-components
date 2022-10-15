@@ -5,14 +5,16 @@ import { FriendList } from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 import user from '../user.json';
 import data from '../data.json';
-import friends from '../friends.json'
-import transactions from '../transactions.json'
+import friends from '../friends.json';
+import transactions from '../transactions.json';
+import { ThemeProvider } from 'styled-components'
+import {theme} from 'theme.js'
 
 
 export const App = () => {
   
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Profile
         user={user} />
       <Statistics
@@ -24,7 +26,7 @@ export const App = () => {
       />
       <TransactionHistory
         items={transactions} />
-    </div>
+    </ThemeProvider>
       
   );
 };

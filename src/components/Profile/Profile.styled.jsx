@@ -2,80 +2,78 @@ import styled from "styled-components";
 
 
 export const UserStats = styled.ul`
-    display: flex;
-    list-style:none;
-    padding: 0;
-    border-top: 1px solid #C0C0C0;
-    background-color: #DCDCDC;
+    display: ${p => p.theme.display.flex};
+    padding: ${p => p.theme.space.p.zero};
+    border-top: ${p => p.theme.borders.border};
+    background-color: ${p => p.theme.colors.bgUsSt};
     
 `;
 export const UserStatsItem = styled.li`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: calc(100% / 3);
-    gap: 6px;
+    display: ${p => p.theme.display.flex};
+    flex-direction: ${p => p.theme.flexDirection.col};
+    align-items: ${p => p.theme.alignItems.center};
+    padding: ${p => p.theme.space.p.m};
+    width: ${p => p.theme.sizes.width.element};
+    gap: ${p => p.theme.space.gridGap.s};
     :not(:last-child) {
-        border-right: 1px solid #C0C0C0;
+        border-right: ${p => p.theme.borders.border};
     }
 `;
 
 export const UserStatsLabel = styled.span`
-    font-size: 18px;
+    font-size: ${p => p.theme.fontSizes.m};
 `;
 
 
 export const UserStatsQuantity = styled.span`
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: ${p => p.theme.fontWeights.fontWeight.bold};
+    font-size: ${p => p.theme.fontSizes.m};
 `;
 
 
 export const UserCard = styled.div`
-
-    width: 450px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 2px 2px 15px 8px #AFEEEE;
+    width: ${p => p.theme.sizes.width.app};
+    background-color: ${p => p.theme.colors.bgEl};
+    margin: ${p => p.theme.space.m.mAuto};
+    border-radius: ${p => p.theme.radii.borderRadius.l};
+    box-shadow: ${p => p.theme.shadows.one};
 `;
 
 
 export const UserDescription = styled.div`
-    padding-top: 30px;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: ${p => p.theme.space.p.l};
+    padding-bottom: ${p => p.theme.space.p.l};
+    display: ${p => p.theme.display.flex};
+    flex-direction: ${p => p.theme.flexDirection.col};
+    align-items: ${p => p.theme.alignItems.center};
 `;
 
 
 export const UserImage = styled.img`
-    margin-bottom: 20px;
-    width: 200px;
-    background-color: #AFEEEE;
-    border-radius: 50%;
+    margin-bottom: ${p => p.theme.space.mb};
+    width: ${p => p.theme.sizes.width.image};
+    background-color: ${p => p.theme.colors.bg};
+    border-radius: ${p => p.theme.radii.borderRadius.circle};
 `;
 
 export const UserName = styled.p`
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 700;
+    margin: ${p => p.theme.space.m.m};
+    margin-bottom: ${p => p.theme.space.mb};
+    font-size: ${p => p.theme.fontSizes.xl};
+    font-weight: ${p => p.theme.fontWeights.fontWeight.bold};
 
 `;
 
 export const UserTag = styled.p`
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: grey;
+    margin: ${p => p.theme.space.m.m};
+    margin-bottom: ${p => p.theme.space.mb};
+    font-size: ${p => p.theme.fontSizes.m};
+    color: ${p => p.theme.colors.statsHead};
 `;
 
 export const UserLocation = styled.p`
-    margin: 0;
-    font-size: 25px;
-    color: grey;
+    margin: ${p => p.theme.space.m.m};
+    font-size: ${p => p.theme.fontSizes.l};
+    color: ${p => p.theme.colors.statsHead};
 `;
 

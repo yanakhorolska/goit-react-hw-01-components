@@ -1,47 +1,46 @@
 import styled from "styled-components";
 
 export const IsOffline = styled.span`
-display: block;
-height: 12px;
-width: 12px;
-background-color: red;
-border-radius: 50%
+display: ${p => p.theme.display.block};
+height: ${p => p.theme.sizes.height.span};
+width: ${p => p.theme.sizes.width.span};
+background-color: ${p => p.theme.colors.offline};
+border-radius: ${p => p.theme.radii.borderRadius.circle};
 `;
 
 export const IsOnline = styled.span`
-display: block;
-height: 12px;
-width: 12px;
-background-color: green;
-border-radius: 50%
+display: ${p => p.theme.display.block};
+height: ${p => p.theme.sizes.height.span};
+width: ${p => p.theme.sizes.width.span};
+background-color: ${p => p.theme.colors.online};
+border-radius: ${p => p.theme.radii.borderRadius.circle};
 `;
 
 export const ListItem = styled.li`
-list-style: none;
-display: flex;
-align-items: center;
-gap: 25px;
-padding-left: 18px;
-background-color: white;
-border-radius: 8px;
-box-shadow: 2px 2px 15px 8px #AFEEEE;
+display: ${p => p.theme.display.flex};
+align-items: ${p => p.theme.alignItems.center};
+gap: ${p => p.theme.space.gridGap.l};
+padding-left: ${p => p.theme.space.p.m};
+background-color: ${p => p.theme.colors.bgEl};
+border-radius: ${p => p.theme.radii.borderRadius.s};
+box-shadow: ${p => p.theme.shadows.one};
 :not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: ${p => p.theme.space.mb};
 
 }
 `;
 
 export const FriendsList = styled.ul`
-    padding: 20px;
-    width: 450px;
-    margin: 0 auto;
-    margin-top: 50px;
+    padding: ${p => p.theme.space.p.m};
+    width: ${p => p.theme.sizes.width.app};
+    margin: ${p => p.theme.space.m.mAuto};
+    margin-top: ${p => p.theme.space.mt};
 `;
 
 export const FriendImage = styled.img`
-    height: 50px;    
+    height: ${p => p.theme.sizes.height.img};    
 `;
 
 export const FriendName = styled.p`
-    font-size:25px;
+    font-size:${p => p.theme.fontSizes.l};
 `;
