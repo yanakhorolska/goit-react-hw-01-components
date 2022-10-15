@@ -1,82 +1,82 @@
 export const theme = {
-    colors: {
-        bg: "#AFEEEE",
-        tableHead: "#B0E0E6",
-        bgEl: "#ffffff",
-        statsHead: "grey",
-        online: "green",
-        offline: "red",
-        bgUsSt: "#DCDCDC"
+  colors: {
+    bg: '#AFEEEE',
+    tableHead: '#B0E0E6',
+    bgEl: '#ffffff',
+    statsHead: 'grey',
+    online: 'green',
+    offline: 'red',
+    bgUsSt: '#DCDCDC',
+  },
+  textAlign: 'center',
+  fontSizes: {
+    s: '10px',
+    m: '20px',
+    l: '25px',
+    xl: '30px',
+  },
+  fontWeights: {
+    fontWeight: {
+      light: '400',
+      bold: '700',
     },
-    textAlign: "center",
-    fontSizes: {
-        s: "10px",
-        m: "20px",
-        l: "25px",
-        xl: "30px"
+  },
+  borders: {
+    border: '1px solid #C0C0C0',
+  },
+  space: {
+    mt: '50px',
+    mb: '20px',
+    m: {
+      m: '0px',
+      mAuto: '0 auto',
     },
-    fontWeights: {
-        fontWeight: {
-            light: "400",
-            bold: "700"
-        }
+    p: {
+      zero: '0',
+      s: '12px',
+      m: '20px',
+      l: '25px',
     },
-    borders: {
-    border: "1px solid #C0C0C0"
+    gridGap: {
+      s: '6px',
+      l: '25px',
     },
-    space: {
-        mt: "50px",
-        mb: "20px",
-        m: {
-            m: "0px",
-            mAuto: "0 auto"
-        },
-        p: {
-            zero: "0",
-            s: "12px",
-            m: "20px",
-            l: "25px"
-        },
-        gridGap: {
-            s: "6px",
-            l: "25px"
-        }
+  },
+  shadows: {
+    one: '2px 2px 15px 8px #AFEEEE',
+  },
+  radii: {
+    borderRadius: {
+      s: '5px',
+      l: '15px',
+      circle: '50%',
     },
-    shadows: {
-        one: "2px 2px 15px 8px #AFEEEE"
+  },
+  sizes: {
+    width: {
+      image: '200px',
+      span: '12px',
+      max: '100%',
+      table: '700px',
+      app: '450px',
+      element: 'calc(100% / 3)',
     },
-    radii: {
-        borderRadius: {
-            s: "5px",
-            l: "15px",
-            circle: "50%"
-        }
+    height: {
+      span: '12px',
+      img: '50px',
     },
-    sizes: {
-        width: {
-            image: "200px",
-            span: "12px",
-            max: "100%",
-            table: "700px",
-            app: "450px",
-            element: "calc(100% / 3)"
-        },
-        height: {
-            span: "12px",
-            img: "50px"
-        }
-    },
-    display: {
-        flex: "flex",
-        block: "block"
-    },
-    justifyContent: {
-        sb: "space-between"
-    },
-    alignItems: {
-        center: "center"
-    },
-    flexDirection: {
-        col: "column"
-    }
-}
+  },
+  display: {
+    flex: 'flex',
+    block: 'block',
+  },
+  justifyContent: {
+    sb: 'space-between',
+  },
+  alignItems: {
+    center: 'center',
+  },
+  flexDirection: {
+    col: 'column',
+  },
+};
