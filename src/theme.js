@@ -1,4 +1,4 @@
-﻿export const theme = {
+export const theme = {
     colors: {
         bg: "#AFEEEE",
         tableHead: "#B0E0E6",
