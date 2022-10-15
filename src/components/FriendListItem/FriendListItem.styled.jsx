@@ -1,4 +1,4 @@
-﻿import styled from 'styled-components';
+import styled from 'styled-components';
 
 export const ListItem = styled.li`
   display: ${p => p.theme.display.flex};
