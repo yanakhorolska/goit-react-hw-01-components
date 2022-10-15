@@ -1,6 +1,8 @@
-import {UserStats, UserStatsItem, UserStatsLabel, UserStatsQuantity, UserCard, UserDescription, UserImage, UserName, UserTag, UserLocation } from './Profile.styled';
+import PropTypes from 'prop-types';
+import { UserStats, UserStatsItem, UserStatsLabel, UserStatsQuantity, UserCard, UserDescription, UserImage, UserName, UserTag, UserLocation } from './Profile.styled';
 
-export const Profile = ({avatar, username, tag, location, stats}) => {
+export const Profile = ({ user }) => {
+  const {username, tag, location, avatar, stats} = user
     return (
       <UserCard>
   <UserDescription>
@@ -30,3 +32,13 @@ export const Profile = ({avatar, username, tag, location, stats}) => {
 </UserCard>
   )
 };
+
+Profile.propTypes = {
+  user: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.object
+  })
+}

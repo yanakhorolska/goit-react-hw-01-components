@@ -1,4 +1,5 @@
-import {StatsCard, Title, StatList, StatLabel, StatItem, StatPercentage } from './Statistics.styled';
+import PropTypes from 'prop-types';
+import { StatsCard, Title, StatList, StatLabel, StatItem, StatPercentage } from './Statistics.styled';
 
 
 export const Statistics = ({title, stats}) => {
@@ -17,3 +18,11 @@ export const Statistics = ({title, stats}) => {
 </StatsCard>
     )
 };
+Statistics.propTypes = {
+title: PropTypes.string,
+stats: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired
+}))
+}
